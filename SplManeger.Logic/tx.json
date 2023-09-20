@@ -1,0 +1,36 @@
+{
+  "protocols": [
+    {
+      "id": [ 1, 0 ],
+      "name": "ACK/PING",
+      "dataFields": [
+        {
+          "name": "vbat",
+          "desc": "battery voltage",
+          "type": "int",
+          "lenght":  2
+        },
+        {
+          "name": "battery temperature",
+          "type": "int",
+          "lenght": 2,
+          "unit": "celcius"
+        },
+        {
+          "name": "sat_time",
+          "desc": "satellite's clock (UTC) when beacon was sent",
+          "type": "datetime",
+          "lenght": 4
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "name": "celsius",
+      "a": 0.00097,
+      "b": -1.5,
+      "symbol": "°C"
+    }
+  ]
+}

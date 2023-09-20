@@ -1,0 +1,40 @@
+{
+  "protocols": [
+    {
+      "id": [ 1, 0 ],
+      "name": "TRXVU/Beacon",
+      "dataFields": [
+        {
+          "name": "vbat",
+          "desc": "battery voltage",
+          "type": "int",
+          "length": 2
+        },
+        {
+          "name": "mode",
+          "desc": "idk lol",
+          "type": "int",
+          "length": 1,
+          "options": {
+            "Idle": 0,
+            "Dumping": 2,
+            "Killing": 255
+          }
+        },
+        {
+          "name": "sat_time",
+          "desc": "satellite's clock (UTC) when beacon was sent",
+          "type": "datetime",
+          "length": 4
+        }
+      ]
+    }
+  ],
+  "units": [
+    {
+      "name": "celsius",
+      "a": 0.00097,
+      "symbol": "°C"
+    }
+  ]
+}
